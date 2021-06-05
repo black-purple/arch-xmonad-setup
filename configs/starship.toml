@@ -1,0 +1,35 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Make prompt a single line instead of two lines
+[line_break]
+disabled = true
+
+# show special character
+[character]    
+format = "[\\$](bold #60a3bc) "
+
+# Disable the package module, hiding it from the prompt completely
+[git_state]
+disabled = true
+[git_branch]
+disabled = true
+[git_status]
+disabled = true
+
+# show hostname
+[hostname]
+ssh_only = false
+format =  "[$hostname](#2980b9) "
+trim_at = ".companyname.com"
+disabled = false
+# show username
+[username]
+style_user = "#fa983a"
+style_root = "bold #e74c3c"
+format = "[\\[](bold #aa2027)[$user]($style)[@](#badc58)"
+disabled = false
+show_always = true
+# show current directory
+[directory]
+format = "[$path](#686de0) [\\]](bold #aa2027)"

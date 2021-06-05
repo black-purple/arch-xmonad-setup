@@ -1,0 +1,31 @@
+-- http://projects.haskell.org/xmobar/
+-- I use Font Awesome 5 fonts in this config for unicode "icons".  On Arch Linux,
+-- install this package from the AUR to get these fonts: otf-font-awesome-5-free
+
+Config {font = "xft:Ubuntu:weight=bold:pixelsize=11:antialias=true:hinting=true"
+       , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
+                           , "xft:Font Awesome 5 Free Solid:pixelsize=12"
+                           , "xft:Font Awesome 5 Brands:pixelsize=12"
+                           ]
+       , bgColor = "#282c34"
+       , fgColor = "#ff6c6b"
+       , position = Static { xpos = 0 , ypos = 0, width = 1366, height = 22 }
+       , lowerOnStart = True
+       , hideOnStart = False
+       , allDesktops = True
+       , persistent = True
+       , iconRoot = "$HOME/.xmonad/xpm/"  -- default: "."
+       , commands = [
+                    -- Time and date
+                      Run Date "<fn=2>\xf017</fn>  %b %d - (%H:%M) " "date" 10
+                      -- Cpu usage in percent
+                    , Run Cpu ["-t", "<fn=2>\xf2db</fn>  (<total>%)","-H","50","--high","red"] 20
+                      -- Ram used number and percent
+                    , Run Memory ["-t", "<fn=2>\xf233</fn>  (<usedratio>%)"] 20
+                    , Run UnsafeStdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " <action=`scrot`><icon=/home/black/.xmonad/xpm/haskell_20.xpm/></action>   <fc=#666666>|</fc>  <fc=#686de1>Arch Linux</fc>   <fc=#666666>|</fc> %UnsafeStdinReader%}{<fc=#666666>|</fc> <fc=#ecbe7b><action=`alacritty -e htop`>%cpu%</action></fc> <fc=#666666>|</fc>  <fc=#ff6c6b><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#46d9ff>%date%</fc>                      "
+ }
+

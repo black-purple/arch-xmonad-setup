@@ -1,0 +1,8 @@
+# Set our default path
+PATH="/usr/local/sbin:/usr/local/bin:/usr/bin/core_perl:/usr/bin:$HOME/.config/bspwm/panel:$HOME/flutter/:$HOME/.local/bin"
+export PATH
+export BROWSER=/usr/bin/firefox
+export TERMINAL=/usr/bin/alacritty
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+
