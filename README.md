@@ -71,6 +71,9 @@ Install all my needed and favourites apps
     * ninja
     * bison
     * base-devel
+    * texlive-most
+    * texlive-lang
+    * devour
 * Xmonad utils
     * xdotool
     * trayer
