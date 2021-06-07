@@ -76,8 +76,10 @@ Install all my needed and favourites apps
     * ninja
     * bison
     * base-devel
+* LaTeX
     * texlive-most
     * texlive-lang
+    * biber
 * Xmonad utils
     * trayer
     * volumeicon
