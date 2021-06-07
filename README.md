@@ -51,10 +51,15 @@ Install all my needed and favourites apps
 * Video player
     * mpv
     * vlc
+* PDF reader
+    * evince
+    * zathura
+    * okular
 * Tools:
     * xdg-user-dirs
     * git
     * paru
+    * yay
     * devour
     * shell-color-scripts
     * doas
@@ -73,15 +78,13 @@ Install all my needed and favourites apps
     * base-devel
     * texlive-most
     * texlive-lang
-    * devour
 * Xmonad utils
-    * xdotool
     * trayer
     * volumeicon
     * nitrogen
     * compton
     * dmenu
-* Apps:
+* Apps
     * telegram-desktop
     * discord
     * signal-desktop
