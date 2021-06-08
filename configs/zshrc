@@ -4,7 +4,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/black/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -U colors && colors
 
