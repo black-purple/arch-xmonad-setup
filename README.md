@@ -76,6 +76,8 @@ Install all my needed and favourites apps
     * ninja
     * bison
     * base-devel
+    * zsh-syntax-highlighting
+    * zsh-autosuggestions-git
 * LaTeX
     * texlive-most
     * texlive-lang
@@ -111,7 +113,12 @@ There is an installer script that installs all of these without user interaction
 
 <br>
 <br>
+## User Dirs
+Change the dir names for my user dirs (Desktop, Downloads, Pictures...)
 
+>```
+>nvim ~/.config/user-dirs.dirs
+>
 ## Xmonad
 
 <br>
