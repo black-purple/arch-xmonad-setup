@@ -113,12 +113,14 @@ There is an installer script that installs all of these without user interaction
 
 <br>
 <br>
+
 ## User Dirs
+
 Change the dir names for my user dirs (Desktop, Downloads, Pictures...)
 
 >```
 >nvim ~/.config/user-dirs.dirs
->
+>```
 ## Xmonad
 
 <br>
