@@ -321,8 +321,11 @@ Copy the config files each to it's appropriate location
 ## Conky Setup
 
 I took the theming from [devianart](https://www.deviantart.com)
+<br>
 The creater is Khiky Merveilles
+<br>
 This is the [post](https://www.deviantart.com/khiky-merveilles/art/Enif-Conky-theme-880596072) on [devianart](https://www.deviantart.com)
+<br>
 Follow the inscructions there and copy the config files here to have the look in the screenshots
 
 ## Flutter Install
