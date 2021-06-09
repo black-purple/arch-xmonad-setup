@@ -22,6 +22,9 @@ Preview image
 <br>
 <img src="ss.png" width="800">
 <br>
+<br>
+<img src="ss2.png" width="800">
+<br>
 
 # My **Arch Linux Xmonad** setup
 
@@ -62,6 +65,7 @@ Install all my needed and favourites apps
     * yay
     * devour
     * shell-color-scripts
+    * conky
     * doas
     * lsd
     * bat
@@ -299,14 +303,27 @@ Copy the config files each to it's appropriate location
 * fish
 >```
 >rm -rf ~/.config/fish
->cp -r ~/dotfiles/fish/ ~/.config/
+>cp -r ~/dotfiles/configs/fish/ ~/.config/
 >```
 
 * ranger
 >```
 >rm -rf ~/.config/ranger
->cp -r ~/dotfiles/ranger/ ~/.config/
+>cp -r ~/dotfiles/configs/ranger/ ~/.config/
 >```
+
+* conky
+>```
+>rm -rf ~/.config/conky/
+>cp -r ~/dotfiles/configs/conky ~/.config/
+>```
+
+## Conky Setup
+
+I took the theming from [devianart](https://www.deviantart.com)
+The creater is Khiky Merveilles
+This is the [post](https://www.deviantart.com/khiky-merveilles/art/Enif-Conky-theme-880596072) on [devianart](https://www.deviantart.com)
+Follow the inscructions there and copy the config files here to have the look in the screenshots
 
 ## Flutter Install
 
