@@ -79,7 +79,7 @@ myTerminal :: String
 myTerminal = "alacritty" -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "/home/black/Downloads/firefox/firefox-bin"  -- Sets firefox as browser
+myBrowser = "~/dls/firefox/firefox-bin"  -- Sets firefox as browser
 
 myEditor :: String
 myEditor = myTerminal ++ " -e nvim "    -- Sets vim as editor
@@ -101,6 +101,7 @@ myStartupHook = do
     spawnOnce "compton &"
     spawnOnce "nm-applet &"
     spawnOnce "volumeicon &"
+    spawnOnce "conky -c $HOME/.config/conky/Enif/Enif.conf &> /dev/null &"
     spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --transparent true --alpha 0 --tint 0x282c34 --height 22 &"
     spawnOnce "nitrogen --restore &"
     setWMName "LG3D"
