@@ -39,8 +39,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
-"{{ LaTeX }}
+"{{ LaTeX Plugin}}
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+"{{ MarkDown Plugin }}
+    Plug 'iamcco/markdown-preview.vim'
 
 call plug#end()
 
@@ -67,10 +69,11 @@ set hidden                      " Needed to keep multiple buffers open
 set nobackup                    " No auto backups
 set noswapfile                  " No swap
 set t_Co=256                    " Set if term supports 256 colors.
-set number relativenumber       " Display line numbers
+set number                      " Display line numbers
 set clipboard=unnamedplus       " Copy/paste between vim and other programs.
 syntax enable
 let g:rehash256 = 1
+let g:livepreview_previewer = 'evince'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
