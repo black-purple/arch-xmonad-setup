@@ -56,10 +56,7 @@ Install all my needed and favourites apps
 * Video player
     * mpv
     * vlc
-* PDF reader
-    * evince
-    * zathura
-    * okular
+* PDF reader: evince
 * Tools:
     * xdg-user-dirs
     * git
@@ -108,7 +105,6 @@ Install all my needed and favourites apps
     * code-insiders
     * eclipse
     * atom
-    * evince
     * wps-office
     * godot
 * Programming Languages
@@ -133,7 +129,7 @@ To install the packages in the aur use the following command:
 NOTE!!
 
 If you don't have an aur helper I suggest you use one.
-I personally use yay so this the the command I'm using.
+I personally use yay so this is the command I'm using.
 
 >```
 >yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts nerd-fonts-mononoki devour shell-color-scripts
