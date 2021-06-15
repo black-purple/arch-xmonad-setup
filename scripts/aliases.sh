@@ -12,10 +12,14 @@ alias r=ranger
 alias v='devour mpv'
 alias d=devour
 
+# mpv commads
+alias vs='mpv --no-video'
+
 # config commands
 alias xc='nvim ~/.xmonad/xmonad.hs; cp ~/.xmonad/xmonad.hs ~/dotfiles/configs/'
 alias ac='nvim ~/.config/alacritty/alacritty.yml; cp ~/.config/alacritty/alacritty.yml ~/dotfiles/configs/'
 alias brc='nvim ~/.bashrc'
+alias zrc='nvim ~/.zshrc'
 alias frc='nvim ~/.config/fish/config.fish'
 
 # pacman commands
@@ -35,6 +39,7 @@ alias ls=lsd
 alias rm='rm -i'
 alias nv=nvim
 alias clock='tty-clock -scC 3'
+alias gotop='gotop -c nord'
 
 # ls shortcuts
 alias la='lsd -lhatr'

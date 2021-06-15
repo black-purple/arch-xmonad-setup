@@ -1,4 +1,4 @@
-NOTE!!
+[NOTE](NOTE)!!
 
 Many of the config files in this repository are originally from Derek Taylor's Gitlab
 Also known as DistroTube
@@ -43,7 +43,9 @@ Install all my needed and favourites apps
     * chromium
     * qutebrowser
 * Screenshot utility: scrot
-* System ressources monitor: htop
+* System ressources monitor: 
+    * htop
+    * gotop
 * Fonts:
     * ttf-ubuntu-font-family
     * otf-fontawesome-5-free
@@ -69,6 +71,7 @@ Install all my needed and favourites apps
     * doas
     * lsd
     * bat
+    * jp2a
     * figlet
     * lolcat
     * neofetch
@@ -103,6 +106,7 @@ Install all my needed and favourites apps
     * github-desktop
     * code
     * code-insiders
+    * eclipse
     * atom
     * evince
     * wps-office
@@ -113,18 +117,37 @@ Install all my needed and favourites apps
     * dotnet 
 
 <br>
-There is an installer script that installs all of these without user interaction (Including the packages that are from the AUR)
+To install the above packages follow the steps below
 
 <br>
+# Packages & Tools
+To install the packages in the official repos use the following command:
+
+>```
+>sudo pacman -Syu ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>```
+
+
+To install the packages in the aur use the following command:
+
+NOTE!!
+
+If you don't have an aur helper I suggest you use one.
+I personally use yay so this the the command I'm using.
+
+>```
+>yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts nerd-fonts-mononoki devour shell-color-scripts
+>```
 <br>
 
 ## User Dirs
 
-Change the dir names for my user dirs (Desktop, Downloads, Pictures...)
+Change the dir names for my user dirs (Desktop, Downloads, Pictures...) to shorter lowercase names (dt, dls, pcs...)
 
 >```
 >nvim ~/.config/user-dirs.dirs
 >```
+
 ## Xmonad
 
 <br>
@@ -271,6 +294,7 @@ Run the following command for Neovim
 These commads are taken from the [official repo](https://github.com/junegunn/vim-plug) of vim plug 
 
 
+
 ### Config Files
 Clone the repo to your home directory
 Copy the config files each to it's appropriate location
@@ -294,6 +318,16 @@ Copy the config files each to it's appropriate location
 >cp ~/dotfiles/configs/init.vim ~/.config/nvim/init.vim
 >```
 
+    after that open neovim and run this command 
+        :Pluginstall
+* vim
+>```
+>rm ~/.vimrc
+>cp ~/dotfiles/configs/vimrc ~/.vimrc
+>```
+
+    after that open vim and run this command 
+        :Pluginstall
 * alacritty
 >```
 >rm ~/.config/alacritty/alacritty.yml
@@ -343,6 +377,7 @@ Run this command to see if flutter is working fine
 >```
 >flutter doctor
 >```
+
 You will have some erros if you don't have the Android SDK installed
 
 Ignore android studio errors if you're gonna use VScode
@@ -353,7 +388,20 @@ When done you might want to run this command to download some needed packages
 >flutter precache
 >```
 
-<hr>
-<br>
 
-# Thank you Derek & Brian!!
+If you want to enable desktop support in Flutter use this command:
+
+>```
+># I'm assuming you're using Linux 
+># but you can add support for Windows & Mac too
+>flutter config --enable-linux-desktop
+>```
+
+Run flutter doctor again to see if you need any other packages to make apps for Linux / Windows / Mac.
+<br>
+# Special Thanks 
+
+* Derek Taylor
+* Brian Buccola
+* Khiky Merveilles
+
