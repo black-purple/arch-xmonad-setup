@@ -110,7 +110,6 @@ Install all my needed and favourites apps
 * Programming Languages
     * dart/flutter
     * rust
-    * dotnet 
 
 <br>
 To install the above packages follow the steps below
@@ -120,7 +119,7 @@ To install the above packages follow the steps below
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syu ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
@@ -129,10 +128,18 @@ To install the packages in the aur use the following command:
 NOTE!!
 
 If you don't have an aur helper I suggest you use one.
+
+If you want to install yay use these steps:
+
+>```
+>cd /tmp; git clone aur.archlinux.org/yay.git; cd yay; makepkg -si
+>```
+
 I personally use yay so this is the command I'm using.
 
 >```
->yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts nerd-fonts-mononoki devour shell-color-scripts
+>yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
+
 >```
 <br>
 
