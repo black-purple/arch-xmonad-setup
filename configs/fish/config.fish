@@ -1,4 +1,5 @@
 set fish_greeting
-source ~/dotfiles/*.sh
-clear
-dt
+source ~/BashScripts/aliases.sh
+colorscript -r
+printf '\n'
+starship init fish | source
