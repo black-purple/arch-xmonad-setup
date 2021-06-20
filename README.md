@@ -142,7 +142,7 @@ I personally use yay so this is the command I'm using.
 If you want to install yay use these steps:
 
 >```
->cd /tmp; git clone aur.archlinux.org/yay.git; cd yay; makepkg -si
+>cd /tmp; git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
 >```
 <br>
 

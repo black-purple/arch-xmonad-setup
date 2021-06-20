@@ -325,9 +325,9 @@ myKeys =
         , ("C-M1-l", incScreenSpacing 2)         -- Increase screen spacing
 
     -- Grid Select (CTR-g followed by a key)
-        , ("C-g g", spawnSelected' myAppGrid)                 -- grid select favorite apps
-        , ("C-g t", goToSelected $ mygridConfig myColorizer)  -- all open windows
-        , ("C-g b", bringSelected $ mygridConfig myColorizer) -- bring selected window to curretn workspace
+        , ("C-S-g g", spawnSelected' myAppGrid)                 -- grid select favorite apps
+        , ("C-S-g t", goToSelected $ mygridConfig myColorizer)  -- all open windows
+        , ("C-S-g b", bringSelected $ mygridConfig myColorizer) -- bring selected window to curretn workspace
 
     -- Windows navigation
         , ("M-m", windows W.focusMaster)  -- Move focus to the master window
