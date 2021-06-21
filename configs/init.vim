@@ -44,9 +44,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
-"{{ LaTeX plugin }}
+"{{ LaTeX Plugin }}
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-
+"{{ MarkDown Preview Plugin }}
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+"{{ Discord Presence }}
+    Plug 'vimsence/vimsence'
 call plug#end()
 
 filetype plugin indent on    " required
@@ -76,6 +79,7 @@ set number relativenumber       " Display line numbers
 set clipboard=unnamedplus       " Copy/paste between vim and other programs.
 syntax enable
 let g:rehash256 = 1
+let g:livepreviw_previewer = 'evince'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
