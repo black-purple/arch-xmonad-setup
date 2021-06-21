@@ -286,7 +286,7 @@ myKeys =
 
 -- 90% of these keybindings will work on most keyboard layouts
 -- for full functionality your keyboard layout should be en-us
--- to set your keymap to en-us simply executes this command on your terminal
+-- to set your keymap to en-us simply execute this command on your terminal
 
 --                   setxmap us
 
@@ -325,9 +325,9 @@ myKeys =
         , ("C-M1-l", incScreenSpacing 2)         -- Increase screen spacing
 
     -- Grid Select (CTR-g followed by a key)
-        , ("C-S-g g", spawnSelected' myAppGrid)                 -- grid select favorite apps
-        , ("C-S-g t", goToSelected $ mygridConfig myColorizer)  -- all open windows
-        , ("C-S-g b", bringSelected $ mygridConfig myColorizer) -- bring selected window to curretn workspace
+        , ("C-g g", spawnSelected' myAppGrid)                 -- grid select favorite apps
+        , ("C-g t", goToSelected $ mygridConfig myColorizer)  -- all open windows
+        , ("C-g b", bringSelected $ mygridConfig myColorizer) -- bring selected window to curretn workspace
 
     -- Windows navigation
         , ("M-m", windows W.focusMaster)  -- Move focus to the master window

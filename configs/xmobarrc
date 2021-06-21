@@ -26,6 +26,4 @@ Config {font = "xft:Ubuntu:weight=bold:pixelsize=11:antialias=true:hinting=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <action=`scrot`><icon=/home/black/.xmonad/xpm/haskell_20.xpm/></action>   <fc=#666666>|</fc>  <fc=#686de1>Arch Linux</fc>   <fc=#666666>|</fc> %UnsafeStdinReader%}{<fc=#666666>|</fc> <fc=#ecbe7b><action=`alacritty -e htop`>%cpu%</action></fc> <fc=#666666>|</fc>  <fc=#ff6c6b><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#46d9ff>%date%</fc>                      "
- }
-
+       , template = " <action=`scrot`><fc=#686de1>Arch Linux</fc></action>  <fc=#666666>|</fc> %UnsafeStdinReader%}{<fc=#666666>|</fc> <fc=#ecbe7b><action=`alacritty -e htop`>%cpu%</action></fc> <fc=#666666>|</fc>  <fc=#ff6c6b><action=`alacritty -e htop`>%memory%</action></fc> <fc=#666666>|</fc> <fc=#46d9ff>%date%</fc>                         "
