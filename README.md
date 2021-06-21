@@ -53,6 +53,8 @@ Install all my needed and favourites apps
     * ttf-mononoki
     * adobe-source-code-pro-fonts
     * nerd-fonts-mononoki
+    * ttf-arabeyes-fonts 
+    * ttf-amiri
 * Video player
     * mpv
     * vlc
@@ -136,7 +138,7 @@ If you don't have an aur helper I suggest you use one.
 I personally use yay so this is the command I'm using.
 
 >```
->yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
+>yay eclipse-java-bin gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
 >```
 
 If you want to install yay use these steps:
