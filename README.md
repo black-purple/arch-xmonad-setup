@@ -1,4 +1,4 @@
-[NOTE](NOTE)!!
+NOTE!!
 
 Many of the config files in this repository are originally from Derek Taylor's Gitlab
 Also known as DistroTube
@@ -116,17 +116,17 @@ Install all my needed and favourites apps
 
 <br>
 To install the above packages follow the steps below
-
 <br>
+
 # Packages & Tools
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed xsel python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
-To install the packages in the aur use the following command:
+To install packages from the aur use the following command:
 
 NOTE!!
 
@@ -148,111 +148,20 @@ If you want to install yay use these steps:
 
 ## User Dirs
 
-Change the dir names for my user dirs (Desktop, Downloads, Pictures...) to shorter lowercase names (dt, dls, pcs...)
+Change the dir names for my user dirs (Desktop, Downloads, Pictures...) to shorter lowercase names (dt, dls, pcs...) for quick access in the terminal.
 
 >```
 >nvim ~/.config/user-dirs.dirs
 >```
 
 ## Xmonad
-The steps here are from Brian Buccula's [blog]()
+Follow the steps here from Brian Buccula's [blog](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/) to install **Xmonad**, **Xmonad-contrib** and **Xmobar** using the stack method.
 
-<br>
-Get stack using the following command
-<br>
-<br>
-
->```
->curl -sSL https://get.haskellstack.org/ | sh
->```
-Then to install it run 
-
->```
->stack setup
->```
-Then go to your xmonad directory
-
->```
->cd ~/.xmonad
->```
-
-Now clone the git repositories for xmonad, xmonad-contrib and xmobar
-
->```
-># From inside ~/.xmonad.
->
->git clone "https://github.com/xmonad/xmonad" xmonad-git
->git clone "https://github.com/xmonad/xmonad-contrib" xmonad-contrib-git
->git clone "https://github.com/jaor/xmobar" xmobar-git
->```
-
-Let's turn the xmonad directory into a stack project
->```
-># From inside ~/.xmonad.
->
->stack init
->```
-
-Now build and install everything
-
->```
->stack install
->```
-
-Paste this code into a file called ' **build** '
-
->```
-># ~/.xmonad/build
->#!/bin/sh
->exec stack ghc -- \
->  --make xmonad.hs \
->  -i \
->  -ilib \
->  -fforce-recomp \
->  -main-is main \
->  -v0 \
->  -o "$1"
->```
-
-Make sure it’s executable
-
->```
->chmod a+x build
->```
-
-Whenever you update your xmonad, xmonad-contrib, or xmobar repositories, just cd **~/.xmonad** and run
-
->```
->stack install
->```
-
-Configure xmonad with your login manager
-
->```
->/usr/share/xsessions/xmonad.desktop
->
->[Desktop Entry]
->Encoding=UTF-8
->Type=Application
->Name=Xmonad
->Comment=Lightweight X11 tiled window manager written in Haskell
->Exec=xmonad
->Icon=xmonad
->Terminal=false
->StartupNotify=false
->Categories=Application;
->```
-
-Link ' **~/.local/bin/xmonad** '
-
->```
->ln -s ~/.local/bin/xmonad /usr/bin
->```
+I chose this method to give you the choice to compile these packages with the flags you want.
 <br>
 <hr>
-<br>
 
-### Shell prompt
+## Shell prompt
 Install [starship prompt](https://starship.rs/) using their script
 
 >```
@@ -340,16 +249,14 @@ For Python 2
 >```
 >python3 -m pip install --user --upgrade pynvim
 >```
-    after that open neovim and run this command 
-        :Pluginstall
+After that open neovim and run this command 
+       ```:Pluginstall```
 * vim
 >```
 >rm ~/.vimrc
 >cp ~/dotfiles/configs/vimrc ~/.vimrc
 >```
 
-After that open vim and run this command 
-        :Pluginstall
 * alacritty
 >```
 >rm ~/.config/alacritty/alacritty.yml
@@ -413,9 +320,7 @@ When done you might want to run this command to download some needed packages
 
 If you want to enable desktop support in Flutter use this command:
 
->```
-># I'm assuming you're using Linux 
-># but you can add support for Windows & Mac too
+>``` 
 >flutter config --enable-linux-desktop
 >```
 
