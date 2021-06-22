@@ -1,4 +1,4 @@
-NOTE!!
+[NOTE](NOTE)!!
 
 Many of the config files in this repository are originally from Derek Taylor's Gitlab
 Also known as DistroTube
@@ -60,6 +60,7 @@ Install all my needed and favourites apps
     * vlc
 * PDF reader: evince
 * Tools:
+    * tmux
     * xdg-user-dirs
     * git
     * paru
@@ -124,7 +125,7 @@ To install the above packages follow the steps below
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
@@ -253,6 +254,7 @@ For Python 2
 >```
 After that open neovim and run this command 
        ```:Pluginstall```
+
 * vim
 >```
 >rm ~/.vimrc
@@ -282,6 +284,21 @@ After that open neovim and run this command
 >rm -rf ~/.config/conky/
 >cp -r ~/dotfiles/configs/conky ~/.config/
 >```
+
+
+* tmux
+
+You have to install Tmux Plugin Manager ([TPM](https://github.com/tmux-plugins/tpm)) in order for this config to work for you.
+
+>```
+>cp ~/dotfiles/configs/tmux.config ~/.tmux.config
+>```
+
+After copying this config file go inside of tmux and use this keyboard shortcut to install the basic  tmux theme.
+
+```Ctrl a + i```
+
+You can find other themes on github [here](https://github.com/tmux-plugins).
 
 ## Conky Setup
 
