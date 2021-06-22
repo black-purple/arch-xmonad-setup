@@ -98,6 +98,7 @@ Install all my needed and favourites apps
     * nitrogen
     * compton
     * dmenu
+    * rofi
 * Apps
     * telegram-desktop
     * discord
