@@ -216,7 +216,11 @@ These commads are taken from the [official repo](https://github.com/junegunn/vim
 
 
 ### Config Files
+
 Clone the repo to your home directory
+>```
+>cd; git clone https://github.com/black-purple/arch-xmoand-setup
+>```
 Copy the config files each to it's appropriate location
 
 * xmonad
@@ -230,6 +234,13 @@ Copy the config files each to it's appropriate location
 >```
 >rm ~/.config/xmobar/xmobarrc
 >cp ~/dotfiles/configs/xmobarrc ~/.config/xmobar/xmobarrc
+>```
+
+* rofi
+>```
+>mkdir ~/.config/rofi
+>rm -rf ~/.config/xmobar/
+>cp -r ~/dotfiles/configs/rofi/ ~/.config/
 >```
 
 * neovim
