@@ -1,4 +1,4 @@
-[NOTE](NOTE)!!
+NOTE!!
 
 Many of the config files in this repository are originally from Derek Taylor's Gitlab
 Also known as DistroTube
