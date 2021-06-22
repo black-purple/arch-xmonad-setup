@@ -3,7 +3,7 @@ import XMonad.Actions.Promote
 import XMonad.Util.Dzen
 
 
--- Base
+    -- Base
 import XMonad
 import System.Directory
 import System.IO (hPutStrLn)
@@ -70,7 +70,7 @@ import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce
 
 myFont :: String
-myFont = "xft:nerd-fonts-source-code-pro:regular:size=9:antialias=true:hinting=true"
+myFont = "xft:ubuntu:regular:size=9:antialias=true:hinting=true"
 
 myModMask :: KeyMask
 myModMask = mod4Mask        -- Sets modkey to super/windows key
@@ -79,7 +79,7 @@ myTerminal :: String
 myTerminal = "alacritty" -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "~/dls/firefox/firefox-bin"  -- Sets firefox as browser
+myBrowser = "qutebrowser"  -- Sets firefox as browser
 
 myEditor :: String
 myEditor = myTerminal ++ " -e nvim "    -- Sets vim as editor
@@ -202,6 +202,8 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange  $ mkToggle (NBFULL ?? 
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 "]
 myWorkspaces = [" web ", " code ", " chat ", " sys ", " vid ", " office ", " cgi "]
+-- myWorkspaces = [" one ", " two ", " three ", " four ", " five ", " six ", " seven "]
+
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"
@@ -246,9 +248,6 @@ myManageHook = composeAll
      , className =? "systemsettings"                --> doShift ( myWorkspaces !! 3 )
      , className =? "dolphin"                       --> doShift ( myWorkspaces !! 3 )
      , className =? "Gucharmap"                     --> doShift ( myWorkspaces !! 3 )
-     , className =? "partitionmanager"              --> doShift ( myWorkspaces !! 3 )
-     , className =? "GParted"                       --> doShift ( myWorkspaces !! 3 )
-     , className =? "balena-etcher"                 --> doShift ( myWorkspaces !! 3 )
 
      -- multimedia apps
      , className =? "mpv"                           --> doShift ( myWorkspaces !! 4 )
@@ -274,6 +273,7 @@ myManageHook = composeAll
      , (className =? "Gimp-2.10" <&&> resource =? "Dialog")         --> doFloat 
      , isFullscreen -->  doFullFloat
      ] 
+
 myKeys :: [(String, X ())]
 myKeys =
         [
@@ -299,11 +299,11 @@ myKeys =
         , ("M-c", kill)                          -- Kill focused
 
     -- Run Prompt
-        , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
-        
+    --  , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
+        , ("M-S-<Return>", spawn "rofi -show run") -- Rofi
 
     -- Useful Programs
-        , ("M-<Return>", spawn myTerminal) -- Terminal
+        , ("M-<Return>", spawn (myTerminal + " -e tmux")) -- Terminal
         , ("M-b", spawn myBrowser) -- Browser
         , ("M-M1-h", spawn (myTerminal ++ " -e htop")) -- Htop
        
