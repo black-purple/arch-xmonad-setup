@@ -303,7 +303,7 @@ myKeys =
         , ("M-S-<Return>", spawn "rofi -show run") -- Rofi
 
     -- Useful Programs
-        , ("M-<Return>", spawn (myTerminal + " -e tmux")) -- Terminal
+        , ("M-<Return>", spawn (myTerminal ++ " -e tmux")) -- Terminal
         , ("M-b", spawn myBrowser) -- Browser
         , ("M-M1-h", spawn (myTerminal ++ " -e htop")) -- Htop
        
