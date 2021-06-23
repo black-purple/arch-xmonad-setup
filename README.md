@@ -308,7 +308,7 @@ You have to install Tmux Plugin Manager ([TPM](https://github.com/tmux-plugins/t
 
 After copying this config file go inside of tmux and use this keyboard shortcut to install the basic  tmux theme.
 
-```Ctrl a + i```
+```Ctrl a + I (capital)```
 
 You can find other themes on github [here](https://github.com/tmux-plugins).
 
