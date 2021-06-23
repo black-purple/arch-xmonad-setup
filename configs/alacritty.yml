@@ -247,26 +247,47 @@ colors:
     text: '0xbbc2cf'
 
   # Normal colors
+
+#  One Monokai colors
   normal:
-    black:   '0x1c1f24'
-    red:     '0xff6c6b'
-    green:   '0x98be65'
-    yellow:  '0xda8548'
-    blue:    '0x51afef'
+    black:   '0x282c34'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
     magenta: '0xc678dd'
-    cyan:    '0x5699af'
-    white:   '0x202328'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
+
+#  DistroTube colors
+  #   black:   '0x1c1f24'
+  #   red:     '0xff6c6b'
+  #   green:   '0x98be65'
+  #   yellow:  '0xda8548'
+  #   blue:    '0x51afef'
+  #   magenta: '0xc678dd'
+  #   cyan:    '0x5699af'
+  #   white:   '0x202328'
 
   # Bright colors
   bright:
-    black:   '0x5b6268'
-    red:     '0xda8548'
-    green:   '0x4db5bd'
-    yellow:  '0xecbe7b'
-    blue:    '0x3071db'   # This is 2257a0 in Doom Emacs but I lightened it.
-    magenta: '0xa9a1e1'
-    cyan:    '0x46d9ff'
-    white:   '0xdfdfdf'
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xffffff'
+#  DistroTube colors
+#    black:   '0x5b6268'
+#    red:     '0xda8548'
+#    green:   '0x4db5bd'
+#    yellow:  '0xecbe7b'
+#    blue:    '0x3071db'   # This is 2257a0 in Doom Emacs but I lightened it.
+#    magenta: '0xa9a1e1'
+#    cyan:    '0x46d9ff'
+#    white:   '0xdfdfdf'
 
   # Dim colors
   #
@@ -323,7 +344,7 @@ colors:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 1.0
-# background_opacity: 0.80
+#background_opacity: 0.90
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -359,8 +380,8 @@ background_opacity: 1.0
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-# program: /bin/bash
+shell:
+ program: /bin/fish
 #  args:
 #    - --login
 
