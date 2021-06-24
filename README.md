@@ -16,6 +16,8 @@ This is the original [article](https://brianbuccola.com/how-to-install-xmonad-an
 
 I spent so much time looking for answers and trying to make things work in xmonad, so this is a guide to help you get the same outcome I got but whitout getting frustrated!!
 
+Even thought I've done this on ```Arch``` some of the steps will stay the same on other ```Linux Distributions```
+
 Enjoy the last result!!
 
 Preview image
@@ -84,7 +86,8 @@ Install all my needed and favourites apps
     * pipes-rs
     * cmake
     * ninja
-    * bison
+    * clang
+    * pkgconf
     * base-devel
     * zsh-syntax-highlighting
     * zsh-autosuggestions-git
@@ -122,11 +125,21 @@ Install all my needed and favourites apps
 To install the above packages follow the steps below
 <br>
 
+You might face some errors even if you're following the exact steps here.
+If you do check the [ERRORS](./ERRORS.md) guide where I have solution to some common erros.
+
+
+Clone this repo to your home direcotory using this command (IMPORTANT because all the commands in the steps will only work if you clone it in $HOME)
+
+>```
+>git clone https://github.com/black-purple/arch-xmonad-setup
+>```
+
 # Packages & Tools
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja bison alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
@@ -249,23 +262,7 @@ Copy the config files each to it's appropriate location
 >cp ~/dotfiles/configs/init.vim ~/.config/nvim/init.vim
 >```
 
-I had to install this module in order for some plugins to work.
-
-If you face the same issue use this command:
-
-For Python 3
-
->```
->python3 -m pip install --user --upgrade pynvim
->```
-
-For Python 2
-
->```
->python3 -m pip install --user --upgrade pynvim
->```
-After that open neovim and run this command 
-       ```:Pluginstall```
+If you face an issue with neovim plugins check the solution in [ERRORS.md](./ERRORS.md)
 
 * vim
 >```
@@ -306,7 +303,7 @@ You have to install Tmux Plugin Manager ([TPM](https://github.com/tmux-plugins/t
 >cp ~/dotfiles/configs/tmux.config ~/.tmux.config
 >```
 
-After copying this config file go inside of tmux and use this keyboard shortcut to install the basic  tmux theme.
+After copying this config file go inside of tmux and use this keyboard shortcut to install the basic tmux theme.
 
 ```Ctrl a + I (capital)```
 
@@ -338,28 +335,73 @@ Run this command to see if flutter is working fine
 >flutter doctor
 >```
 
-You will have some erros if you don't have the Android SDK installed
+You will have some erros concerning ```Android Studio``` and ```Android SDK```.
 
-Ignore android studio errors if you're gonna use VScode
+```Android Studio``` will install all the needed packages for android developpement including ```Android SDK```.
 
-When done you might want to run this command to download some needed packages
+So to install ```Android Studio``` you have three options.
+
+* #### From the AUR
+
+Here I used yay, but you can use whatever AUR helper you feel confortable with
+>```
+>yay -S android-studio
+>```
+
+* #### Using SNAP package manager
+
+Run this command to make sure that snap is installed. If it's not istalled it will install it for you.
+
+>```
+>sudo pacman -Sy --needed snapd
+>```
+
+To install ```Android Studio``` using snap, use this command
+
+>```
+>snap install android-studio --classic
+>```
+
+* #### Install from official website
+
+Download the archive from [the official website](https://developer.android.com/studio/).
+
+Go to ```~/Downloads``` and extract the archive.
+
+```cd``` into ```~/Downloads/android-studio/```
+
+Then open the file ```Install-Linux-tar.txt``` and follow the instructions there to install ```Android Studio```
+
+
+IMPORTANT!!
+
+When done with all the errors you might want to run this command to download some needed packages for Flutter developpement (optional)
 
 >```
 >flutter precache
 >```
 
 
-If you want to enable desktop support in Flutter use this command:
+If you want to enable desktop support in Flutter use this command
 
 >``` 
 >flutter config --enable-linux-desktop
 >```
 
 Run flutter doctor again to see if you need any other packages to make apps for Linux / Windows / Mac.
+
+On ```Linux``` you'll need ```ninja, cmake, clang, pkg-config```
+
+You can install them with this command
+
+>```
+>sudo pacman -S --needed ninja clang cmake pkgconf
+>```
+
 <br>
 # Special Thanks 
 
 * Derek Taylor
 * Brian Buccola
 * Khiky Merveilles
-
+* Edoardo Vignati

@@ -300,7 +300,7 @@ myKeys =
 
     -- Run Prompt
     --  , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
-        , ("M-S-<Return>", spawn "rofi -show run") -- Rofi
+        , ("M-M1-<Return>", spawn "rofi -show run") -- Rofi
 
     -- Useful Programs
         , ("M-<Return>", spawn (myTerminal ++ " -e tmux")) -- Terminal
