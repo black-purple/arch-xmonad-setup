@@ -12,7 +12,9 @@ settings:
     https://discord.com: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  content.user_stylesheets:
+    global: null
   statusbar.show:
-    global: always
+    global: never
   tabs.show:
-    global: always
+    global: never
