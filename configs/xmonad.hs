@@ -98,7 +98,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "compton &"
+    spawnOnce "picom &"
     spawnOnce "nm-applet &"
     spawnOnce "volumeicon &"
     spawnOnce "conky -c $HOME/.config/conky/Enif/Enif.conf &> /dev/null &"
@@ -293,17 +293,19 @@ myKeys =
 ------------------------------------------------------------------------------------
 
     -- Xmonad
-          ("M-C-r", spawn "xmonad --recompile")  -- Recompiles xmonad
-        , ("M-S-r", spawn "xmonad --restart")    -- Restarts xmonad
-        , ("M-S-q", io exitSuccess)              -- Quits xmonad
-        , ("M-c", kill)                          -- Kill focused
-
+          ("M-C-r", spawn "xmonad --recompile")                -- Recompiles xmonad
+        , ("M-S-r", spawn "xmonad --restart")                  -- Restarts xmonad
+        , ("M-S-q", io exitSuccess)                            -- Quits xmonad
+        , ("M-c", kill)  -- "M-S-C" works too but it's tiring  -- Kill focused
+    
+    -- Screen Locking
+        , ("M-p", spawn "i3lock-fancy")
     -- Run Prompt
     --  , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
-        , ("M-M1-<Return>", spawn "rofi -show run") -- Rofi
+        , ("M-M1-<Return>", spawn "rofi -show run")           -- Rofi
 
     -- Useful Programs
-        , ("M-<Return>", spawn (myTerminal ++ " -e tmux")) -- Terminal
+        , ("M-<Return>", spawn (myTerminal ++ " -e tmux")) -- Terminal with tmux
         , ("M-b", spawn myBrowser) -- Browser
         , ("M-M1-h", spawn (myTerminal ++ " -e htop")) -- Htop
        
@@ -340,7 +342,7 @@ myKeys =
         , ("M-S-<Tab>", rotSlavesDown)    -- Rotate all windows except master and keep focus in place
         , ("M-C-<Tab>", rotAllDown)       -- Rotate all the windows in the current stack
 
-    -- Layouts
+    -- Layoutsi3lock-fancy-git
         , ("M-<Tab>", sendMessage NextLayout)           -- Switch to next layout
         , ("M-<Space>", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts) -- full screen view
 
@@ -358,7 +360,6 @@ myKeys =
 
    
     -- Controls for mocp music player (SUPER-u followed by a key)
-        , ("M-u p", spawn "mocp --play")
         , ("M-u l", spawn "mocp --next")
         , ("M-u h", spawn "mocp --previous")
         , ("M-u <Space>", spawn "mocp --toggle-pause")
