@@ -17,10 +17,8 @@ For Python 3
 For Python 2
 
 >```
->sudo pacman -S --needed python2-pip; python3 -m pip install --user --upgrade pynvim
+>sudo pacman -S --needed python2-pip; python2 -m pip install --user --upgrade pynvim
 >```
-After that open neovim and run this command 
-       ```:Pluginstall```
 
 ## Flutter doctor
 

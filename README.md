@@ -45,7 +45,7 @@ Install all my needed and favourites apps
     * chromium
     * qutebrowser
 * Screenshot utility: scrot
-* ScreenLock utility: i3lock
+* ScreenLock utility: i3lock-fancy
 * System ressources monitor: 
     * htop
     * gotop
@@ -252,8 +252,7 @@ Copy the config files each to it's appropriate location
 
 * rofi
 >```
->mkdir ~/.config/rofi
->rm -rf ~/.config/xmobar/
+>rm -rf ~/.config/rofi
 >cp -r ~/dotfiles/configs/rofi/ ~/.config/
 >```
 
@@ -263,7 +262,10 @@ Copy the config files each to it's appropriate location
 >cp ~/dotfiles/configs/init.vim ~/.config/nvim/init.vim
 >```
 
+After copying the config files run this command ```:PlugInstall```
+
 If you face an issue with neovim plugins check the solution in [ERRORS.md](./ERRORS.md)
+
 
 * vim
 >```
