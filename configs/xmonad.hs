@@ -277,18 +277,24 @@ myManageHook = composeAll
 myKeys :: [(String, X ())]
 myKeys =
         [
-        -- M  => mod4Mask -- Super key/Windows key
+        -- If you set <myModMask> variable to mod4mask
+        -- M  => Super key/Windows key
         -- C  => Ctrl
         -- S  => Shift
-        -- M1 => mod1Mask -- Alt key
+        -- M1 => Alt
 
+        -- If you set <myModMask> variable to mod1mask
+        -- M => Alt
+        -- C  => Ctrl
+        -- S  => Shift
+        -- M1  => Super key/Windows key
 ------------------------------------------------------------------------------------
 
 -- 90% of these keybindings will work on most keyboard layouts
 -- for full functionality your keyboard layout should be en-us
 -- to set your keymap to en-us simply execute this command on your terminal
 
---                   setxmap us
+--                   setxkbmap us
 
 ------------------------------------------------------------------------------------
 
@@ -300,6 +306,7 @@ myKeys =
     
     -- Screen Locking
         , ("M-p", spawn "i3lock-fancy")
+
     -- Run Prompt
     --  , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
         , ("M-M1-<Return>", spawn "rofi -show run")           -- Rofi
