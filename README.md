@@ -24,8 +24,13 @@ Preview image
 <br>
 <img src="ss.png" width="800">
 <br>
+
 <br>
 <img src="ss2.png" width="800">
+<br>
+
+<br>
+<img src="ss3.png" width="800">
 <br>
 
 # My **Arch Linux Xmonad** setup
