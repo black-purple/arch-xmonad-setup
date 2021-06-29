@@ -99,12 +99,13 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 myStartupHook :: X ()
 myStartupHook = do
     spawnOnce "picom &"
+    spawnOnce "nitrogen --restore &"
     spawnOnce "nm-applet &"
     spawnOnce "volumeicon &"
-    spawnOnce "conky -c $HOME/.config/conky/Enif/Enif.conf &> /dev/null &"
     spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --transparent true --alpha 0 --tint 0x282c34 --height 22 &"
-    spawnOnce "nitrogen --restore &"
     setWMName "LG3D"
+    spawnOnce "conky -c $HOME/.config/conky/Enif/Enif.conf &> /dev/null &"
+    spawnOnce "blueman-adapters &"
 
 myColorizer :: Window -> Bool -> X (String, String)
 myColorizer = colorRangeFromClassName
@@ -215,16 +216,17 @@ myManageHook = composeAll
      -- using 'doShift ( myWorkspaces !! 0)' sends program to workspace 1!
      -- I'm doing it this way because otherwise I would have to write out the full
      -- name of my workspaces and the names would be very long if using clickable workspaces.
-     [ className =? "confirm"         --> doFloat
-     , className =? "file_progress"   --> doFloat
-     , className =? "dialog"          --> doFloat
-     , className =? "download"        --> doFloat
-     , className =? "error"           --> doFloat
-     , className =? "notification"    --> doFloat
-     , className =? "pinentry-gtk-2"  --> doFloat
-     , className =? "splash"          --> doFloat
-     , className =? "toolbar"         --> doFloat
-     , title =? "Oracle VM VirtualBox Manager"  --> doFloat
+     [ 
+       className =? "confirm"                       --> doFloat
+     , className =? "file_progress"                 --> doFloat
+     , className =? "dialog"                        --> doFloat
+     , className =? "download"                      --> doFloat
+     , className =? "error"                         --> doFloat
+     , className =? "notification"                  --> doFloat
+     , className =? "pinentry-gtk-2"                --> doFloat
+     , className =? "splash"                        --> doFloat
+     , className =? "toolbar"                       --> doFloat
+     , title =? "Oracle VM VirtualBox Manager"      --> doFloat
 
   -- Specific apps to appropriate workspace
      -- browsers
@@ -243,7 +245,8 @@ myManageHook = composeAll
      , className =? "TelegramDesktop"               --> doShift ( myWorkspaces !! 2 )
      , className =? "Signal"                        --> doShift ( myWorkspaces !! 2 )
      , className =? "discord"                       --> doShift ( myWorkspaces !! 2 )
- 
+     , className =? "lighcord"                      --> doShift ( myWorkspaces !! 2 )
+
      -- system apps
      , className =? "systemsettings"                --> doShift ( myWorkspaces !! 3 )
      , className =? "dolphin"                       --> doShift ( myWorkspaces !! 3 )
@@ -302,25 +305,24 @@ myKeys =
           ("M-C-r", spawn "xmonad --recompile")                -- Recompiles xmonad
         , ("M-S-r", spawn "xmonad --restart")                  -- Restarts xmonad
         , ("M-S-q", io exitSuccess)                            -- Quits xmonad
-        , ("M-c", kill)  -- "M-S-C" works too but it's tiring  -- Kill focused
+        , ("M-c", kill)  -- "M-S-c" works too but it's tiring  -- Kill focused
     
     -- Screen Locking
-        , ("M-p", spawn "i3lock-fancy")
+        , ("M-p", spawn "i3lock -i ~/.xmonad/lp.png")
 
     -- Run Prompt
     --  , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
         , ("M-M1-<Return>", spawn "rofi -show run")           -- Rofi
 
     -- Useful Programs
-        , ("M-<Return>", spawn (myTerminal ++ " -e tmux")) -- Terminal with tmux
+        , ("M-<Return>", spawn (myTerminal))    -- Terminal
         , ("M-b", spawn myBrowser) -- Browser
         , ("M-M1-h", spawn (myTerminal ++ " -e htop")) -- Htop
+        , ("M-v", spawn ("alacritty  -e vis"))
        
      -- Workspaces
         , ("M-.", nextScreen)  -- Switch focus to next monitor
         , ("M-,", prevScreen)  -- Switch focus
-        , ("M-S-<KP_Add>", shiftTo Next nonNSP >> moveTo Next nonNSP)       -- Shifts focused window to next workspace
-        , ("M-S-<KP_Subtract>", shiftTo Prev nonNSP >> moveTo Prev nonNSP)  -- Shifts focused window to prev workspace
 
     -- Floating windows
         , ("M-f", sendMessage (T.Toggle "floats")) -- Toggles my 'floats' layout
