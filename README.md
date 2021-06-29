@@ -42,10 +42,12 @@ Install all my needed and favourites apps
 * Shell: fish
 * Browser: 
     * firefox
-    * chromium
     * qutebrowser
 * Screenshot utility: scrot
-* ScreenLock utility: i3lock-fancy
+* ScreenLock utility: i3lock-fancy 
+(or just ```i3lock``` with an image, it loads faster that way and you make it look the same as ```i3lock-fancy``` just check the [official repo](https://github.com/meskarune/i3lock-fancy) for more details on that)
+* Music player: mocp (terminalbased)
+* AudioVisualizer: cli-visualizer (terminal based)
 * System ressources monitor: 
     * htop
     * gotop
@@ -64,6 +66,7 @@ Install all my needed and favourites apps
 * PDF reader: evince
 * Tools:
     * tmux
+    * blueman
     * xdg-user-dirs
     * git
     * paru
@@ -106,6 +109,7 @@ Install all my needed and favourites apps
 * Apps
     * telegram-desktop
     * discord
+    * lightcord
     * signal-desktop
     * blender
     * inkscape
@@ -140,7 +144,7 @@ Clone this repo to your home direcotory using this command (IMPORTANT because al
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
@@ -151,16 +155,16 @@ NOTE!!
 If you don't have an aur helper I suggest you use one.
 
 
-I personally use yay so this is the command I'm using.
+I personally use paru so this is the command I'm using.
 
 >```
->yay eclipse-java-bin i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
+>paru eclipse-java-bin lightcord i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
 >```
 
-If you want to install yay use these steps:
+If you want to install paru use this chain of commands:
 
 >```
->cd /tmp; git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
+>cd /tmp; git clone https://aur.archlinux.org/paru.git; cd paru; makepkg -si
 >```
 <br>
 
@@ -346,9 +350,9 @@ So to install ```Android Studio``` you have three options.
 
 * #### From the AUR
 
-Here I used yay, but you can use whatever AUR helper you feel confortable with
+Here I used paru, but you can use whatever AUR helper you feel confortable with
 >```
->yay -S android-studio
+>paru -S android-studio
 >```
 
 * #### Using SNAP package manager
@@ -375,6 +379,14 @@ Go to ```~/Downloads``` and extract the archive.
 
 Then open the file ```Install-Linux-tar.txt``` and follow the instructions there to install ```Android Studio```
 
+
+Rerun this command to insure that everything is okay
+
+>```
+>flutter doctor -v
+>```
+
+If you face an error when trying to accept the ```android licenses``` consider checking [ERRORS.md](./ERRORS.md)
 
 IMPORTANT!!
 
