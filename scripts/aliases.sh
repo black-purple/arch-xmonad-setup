@@ -6,7 +6,10 @@ alias ks=~/BashScripts/lay_sw.sh
 alias kp=~/BashScripts/kp.sh
 
 # mpv commads
-alias vs='mpv --no-video'
+alias dv='devour mpv'
+
+# mocp commands
+alias mocp='mocp -T darkdot_theme'
 
 # config commands
 alias xc='nvim ~/.xmonad/xmonad.hs'
@@ -19,7 +22,7 @@ alias frc='nvim ~/.config/fish/config.fish'
 alias rem='sudo pacman -R --noconfirm'
 alias in='sudo pacman -S --needed --noconfirm'
 alias psr='pacman -Ss'
-alias up='sudo pacman -Syyu'
+alias up='sudo pacman -Syu'
 
 # aur commands
 alias ain='yay -S'
@@ -49,4 +52,4 @@ alias gtaa='git add .'
 alias gtb='git branch'
 alias gtc='git commit -m'
 alias gtp='git push -u origin'
-alias gtl='git clone'
+alias gcl='git clone'
