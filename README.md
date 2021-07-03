@@ -79,6 +79,7 @@ Install all my needed and favourites apps
     * python-pip
     * python2-pip
     * xclip
+    * xsel
     * devour
     * shell-color-scripts
     * conky
@@ -107,6 +108,9 @@ Install all my needed and favourites apps
 * Xmonad utils
     * trayer
     * volumeicon
+    * pavucontrol
+    * pulseaudio
+    * lxappearance
     * nitrogen
     * compton
     * dmenu
@@ -149,7 +153,7 @@ Clone this repo to your home direcotory using this command (IMPORTANT because al
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
 >```
 
 
