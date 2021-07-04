@@ -261,6 +261,7 @@ myManageHook = composeAll
      , className =? "Wps"                           --> doShift ( myWorkspaces !! 5 )
      , className =? "Wpp"                           --> doShift ( myWorkspaces !! 5 )
      , className =? "Et"                            --> doShift ( myWorkspaces !! 5 )
+     , className =? "libreoffice-startcenter"       --> doShift ( myWorkspaces !! 5 )
 
      -- CGI apps
      , className =? "Gimp-2.10"                     --> doShift ( myWorkspaces !! 6 )

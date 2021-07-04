@@ -69,6 +69,9 @@ Install all my needed and favourites apps
     * mpv
     * vlc
 * PDF reader: evince
+* Office Suite:
+    * WPS Office
+    * LibreOffice
 * Tools:
     * tmux
     * blueman
@@ -119,7 +122,6 @@ Install all my needed and favourites apps
     * telegram-desktop
     * discord
     * lightcord
-    * signal-desktop
     * blender
     * inkscape
     * gimp
@@ -129,7 +131,6 @@ Install all my needed and favourites apps
     * code-insiders
     * eclipse
     * atom
-    * wps-office
     * godot
 * Programming Languages
     * dart/flutter
@@ -153,7 +154,7 @@ Clone this repo to your home direcotory using this command (IMPORTANT because al
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord signal-desktop blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord libreoffice blender inkscape gimp krita atom godot evince rust
 >```
 
 
