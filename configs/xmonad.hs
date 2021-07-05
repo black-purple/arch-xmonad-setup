@@ -70,7 +70,10 @@ import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce
 
 myFont :: String
-myFont = "xft:ubuntu:regular:size=9:antialias=true:hinting=true"
+myFont = "xft:Ubuntu:regular:size=9:antialias=true:hinting=true"
+
+myEmojiFont :: String
+myEmojiFont = "xft:JoyPixels:regular:size=9:antialias=true:hinting=true"
 
 myModMask :: KeyMask
 myModMask = mod4Mask        -- Sets modkey to super/windows key
@@ -234,6 +237,7 @@ myManageHook = composeAll
      , className =? "qutebrowser"                   --> doShift ( myWorkspaces !! 0 )
      , className =? "Chromium"                      --> doShift ( myWorkspaces !! 0 )
      , className =? "Firefox Developer Edition"     --> doShift ( myWorkspaces !! 0 )
+     , className =? "Brave-browser"                 --> doShift ( myWorkspaces !! 0 )
      -- code editors
      , className =? "Code"                          --> doShift ( myWorkspaces !! 1 )
      , className =? "Code - Insiders"               --> doShift ( myWorkspaces !! 1 )
@@ -320,7 +324,8 @@ myKeys =
         , ("M-b", spawn myBrowser) -- Browser
         , ("M-M1-h", spawn (myTerminal ++ " -e htop")) -- Htop
         , ("M-v", spawn ("alacritty  -e vis"))
-       
+        , ("M-e", spawn "pcmanfm")
+
      -- Workspaces
         , ("M-.", nextScreen)  -- Switch focus to next monitor
         , ("M-,", prevScreen)  -- Switch focus
