@@ -17,7 +17,7 @@ Config {font = "xft:Ubuntu:weight=bold:pixelsize=11:antialias=true:hinting=true"
        , iconRoot = "$HOME/.xmonad/xpm/"  -- default: "."
        , commands = [
                     -- Time and date
-                      Run Date "<fn=2>\xf017</fn>  %b %d - (%H:%M) " "date" 10
+                      Run Date "<fn=2>\xf017</fn> %a %b %d %Y (%r) " "date" 10
                       -- Cpu usage in percent
                     , Run Cpu ["-t", "<fn=2>\xf2db</fn>  (<total>%)","-H","50","--high","red"] 20
                       -- Ram used number and percent
