@@ -386,7 +386,8 @@ myKeys =
 main :: IO ()
 main = do
     -- Launching xmobar on monitor
-    xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
+    xmproc0 <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc0"
+    xmproc1 <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc1"
     -- the xmonad, ya know...what the WM is named after!
     xmonad $ ewmh def
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageDocks
@@ -407,7 +408,8 @@ main = do
         , normalBorderColor  = myNormColor
         , focusedBorderColor = myFocusColor
         , logHook = workspaceHistoryHook <+> dynamicLogWithPP xmobarPP
-                        { ppOutput = hPutStrLn xmproc
+                        { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
+                                        >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
                         , ppCurrent = xmobarColor "#c3e88d" "" . wrap "[" "]" -- Current workspace in xmobar
                         , ppVisible = xmobarColor "#c3e88d" "" .clickable               -- Visible but not current workspace
                         , ppHidden = xmobarColor "#82ABAF" "" . wrap "*" "" .clickable  -- Hidden workspaces in xmobar
