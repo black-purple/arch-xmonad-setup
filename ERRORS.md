@@ -40,4 +40,16 @@ In case you face this error when trying to accept the ```android licenses```
 
 Take a look at this [article](https://edoardovignati.it/solved-flutter-android-licenses-exception) by **edoardo vignati**
 
+## HDMI issue
 
+If you face any issue with HDMI not working just install ```x-on-resize``` from the **AUR** and run this command
+
+>```
+>xrandr --output HDMI-1 --auto
+>```
+
+Then run this one to give each monitor it's own resolution (some parameters her may vary depending on your ```xrandr``` output)
+
+>```
+>xrandr --output LVDS1 --mode 1366x768 --output HDMI1 --mode 1280x1024 --left-of LVDS1
+>```

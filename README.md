@@ -75,6 +75,7 @@ Install all my needed and favourites apps
 * Tools:
     * tmux
     * arch-wiki-docs
+    * x-on-resize
     * blueman
     * xdg-user-dirs
     * git
