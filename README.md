@@ -39,7 +39,9 @@ Preview image
 
 Install all my needed and favourites apps
 
-* Terminal: alacritty
+* Terminal:
+    * alacritty
+    * kitty
 * File explorer: ranger
     * Dependencies: w3m, uberzug
 * Text editor: neovim
@@ -156,7 +158,7 @@ Clone this repo to your home direcotory using this command (IMPORTANT because al
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed arhc-wiki-docs wrch-wiki-lite pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord libreoffice blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed kitty arhc-wiki-docs wrch-wiki-lite pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m uberzug neovim fish firefox chromium qutebrowsr doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord libreoffice blender inkscape gimp krita atom godot evince rust
 >```
 
 
