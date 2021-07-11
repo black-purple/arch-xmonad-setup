@@ -16,6 +16,102 @@ disabled = true
 disabled = true
 [git_status]
 disabled = true
+[time]
+disabled = true 
+[python]
+disabled = true
+[ruby]
+disabled = true
+[shlvl]
+disabled = true
+[kubernetes]
+disabled = true
+[vcsh]
+disabled = true
+[git_commit]
+disabled = true
+[docker_context]
+disabled = true
+[package]
+disabled = true
+[cmake]
+disabled = true
+[dart]
+disabled = true
+[deno]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[erlang]
+disabled = true
+[golang]
+disabled = true
+[helm]
+disabled = true
+[java]
+disabled = true
+[julia]
+disabled = true
+[kotlin]
+disabled = true
+[nim]
+disabled = true
+[nodejs]
+disabled = true
+[ocaml]
+disabled = true
+[perl]
+disabled = true
+[php]
+disabled = true
+[purescript]
+disabled = true
+[red]
+disabled = true
+[rust]
+disabled = true
+[scala]
+disabled = true
+[swift]
+disabled = true
+[terraform]
+disabled = true
+[vlang]
+disabled = true
+[vagrant]
+disabled = true
+[zig]
+disabled = true
+[nix_shell]
+disabled = true
+[conda]
+disabled = true
+[memory_usage]
+disabled = true
+[aws]
+disabled = true
+[gcloud]
+disabled = true
+[openstack]
+disabled = true
+[env_var]
+disabled = true
+[crystal]
+disabled = true
+[custom]
+disabled = true
+[cmd_duration]
+disabled = true
+[lua]
+disabled = true
+[jobs]
+disabled = true
+[battery]
+disabled = true
 
 # show hostname
 [hostname]
@@ -23,13 +119,17 @@ ssh_only = false
 format =  "[$hostname](#2980b9) "
 trim_at = ".companyname.com"
 disabled = false
+
 # show username
 [username]
-style_user = "#fa983a"
+style_user = "#F79F1F"
 style_root = "bold #e74c3c"
 format = "[\\[](bold #aa2027)[$user]($style)[@](#badc58)"
 disabled = false
 show_always = true
+
 # show current directory
 [directory]
 format = "[$path](#686de0) [\\]](bold #aa2027)"
+
+
