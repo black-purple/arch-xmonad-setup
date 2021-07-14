@@ -230,6 +230,7 @@ myManageHook = composeAll
      , className =? "pinentry-gtk-2"                --> doFloat
      , className =? "splash"                        --> doFloat
      , className =? "toolbar"                       --> doFloat
+     , className =? "copyq"                       --> doFloat
      , title =? "Oracle VM VirtualBox Manager"      --> doFloat
 
   -- Specific apps to appropriate workspace
