@@ -82,7 +82,7 @@ myTerminal :: String
 myTerminal = "kitty" -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "qutebrowser"  -- Sets firefox as browser
+myBrowser = "brave"  -- Sets firefox as browser
 
 myEditor :: String
 myEditor = myTerminal ++ " -e nvim "    -- Sets vim as editor
@@ -109,6 +109,7 @@ myStartupHook = do
     setWMName "LG3D"
     spawnOnce "conky -c $HOME/.config/conky/Enif/Enif.conf &> /dev/null &"
     spawnOnce "blueman-adapters &"
+    spawnOnce "copyq &"
 
 myColorizer :: Window -> Bool -> X (String, String)
 myColorizer = colorRangeFromClassName
