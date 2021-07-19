@@ -9,7 +9,7 @@ These are the links to his work
 
 [DistroTube channel on youtube](https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg)
 
-For the xmonad installation guide, I took those steps from Brian Buccola
+For the xmonad installation guide, It's from Brian Buccola
 
 This is the original [article](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/)
 
@@ -195,9 +195,15 @@ Change the dir names for my user dirs (Desktop, Downloads, Pictures...) to short
 >```
 
 ## Xmonad
-Follow the steps here from Brian Buccula's [blog](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/) to install **Xmonad**, **Xmonad-contrib** and **Xmobar** using the stack method.
 
-I chose this method to give you the choice to compile these packages with the flags you want.
+You can install **Xmonad**, **Xmonad-contrib** and **Xmobar** from the official repos by using this commad
+
+>```
+>sudo pacman -Sy --needed xmonad xmonad-contrib xmobar
+>```
+
+But if you want to build **Xmonad** with some specific flags, follow the steps here from Brian Buccula's [blog](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/).
+
 <br>
 <hr>
 
@@ -330,7 +336,10 @@ You have to install Tmux Plugin Manager ([TPM](https://github.com/tmux-plugins/t
 
 After copying this config file go inside of tmux and use this keyboard shortcut to install the basic tmux theme.
 
-```Ctrl a + I (capital)```
+>```
+>Ctrl a + I (capital)
+>```
+
 
 You can find other themes on github [here](https://github.com/tmux-plugins).
 
@@ -360,11 +369,11 @@ Run this command to see if flutter is working fine
 >flutter doctor
 >```
 
-You will have some erros concerning ```Android Studio``` and ```Android SDK```.
+You will have some erros concerning **Android Studio** and **Android SDK**
 
-```Android Studio``` will install all the needed packages for android developpement including ```Android SDK```.
+**Android Studio** will install all the needed packages for android developpement including **Android SDK**.
 
-So to install ```Android Studio``` you have three options.
+So to install **Android Studio** you have three options.
 
 * #### From the AUR
 
@@ -381,7 +390,7 @@ Run this command to make sure that snap is installed. If it's not istalled it wi
 >sudo pacman -Sy --needed snapd
 >```
 
-To install ```Android Studio``` using snap, use this command
+To install **Android Studio** using snap, use this command
 
 >```
 >snap install android-studio --classic
@@ -393,9 +402,9 @@ Download the archive from [the official website](https://developer.android.com/s
 
 Go to ```~/Downloads``` and extract the archive.
 
-```cd``` into ```~/Downloads/android-studio/```
+**cd** into **~/Downloads/android-studio/**
 
-Then open the file ```Install-Linux-tar.txt``` and follow the instructions there to install ```Android Studio```
+Then open the file **Install-Linux-tar.txt** and follow the instructions there to install **Android Studio**
 
 
 Rerun this command to insure that everything is okay
@@ -432,6 +441,7 @@ You can install them with this command
 >```
 
 <br>
+
 # Special Thanks 
 
 * Derek Taylor
