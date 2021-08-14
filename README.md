@@ -47,18 +47,18 @@ Install all my needed and favourites apps
 * Text editor: neovim
 * IDE: visual-studio-code
 * Shell: fish
-* Browser: 
+* Browser:
     * firefox
     * qutebrowser
 * Video Editor:
     * kdenlive
     * openshot
 * Screenshot utility: scrot
-* ScreenLock utility: i3lock-fancy 
+* ScreenLock utility: i3lock-fancy
 (or just ```i3lock``` with an image, it loads faster that way and you make it look the same as ```i3lock-fancy``` just check the [official repo](https://github.com/meskarune/i3lock-fancy) for more details on that)
-* Music player: mocp (terminalbased)
+* Music player: mocp (terminal based)
 * AudioVisualizer: cli-visualizer (terminal based)
-* System ressources monitor: 
+* System ressources monitor:
     * htop
     * gotop
 * Fonts:
@@ -68,7 +68,7 @@ Install all my needed and favourites apps
     * ttf-mononoki
     * adobe-source-code-pro-fonts
     * nerd-fonts-mononoki
-    * ttf-arabeyes-fonts 
+    * ttf-arabeyes-fonts
     * ttf-amiri
 * Video player
     * mpv
@@ -84,6 +84,7 @@ Install all my needed and favourites apps
     * x-on-resize
     * blueman
     * xdg-user-dirs
+    * xdotool
     * git
     * paru
     * yay
@@ -174,16 +175,16 @@ NOTE!!
 If you don't have an aur helper I suggest you use one.
 
 
-I personally use paru so this is the command I'm using.
+I personally use yay so this is the command I'm using.
 
 >```
->paru eclipse-java-bin lightcord i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
+>yay eclipse-java-bin lightcord i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
 >```
 
-If you want to install paru use this chain of commands:
+If you want to install yay use this chain of commands:
 
 >```
->cd /tmp; git clone https://aur.archlinux.org/paru.git; cd paru; makepkg -si
+>cd /tmp; git clone https://aur.archlinux.org/yay-git.git; cd paru; makepkg -si
 >```
 <br>
 
@@ -254,7 +255,7 @@ Run the following command for Neovim
 >       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 >```
 
-These commads are taken from the [official repo](https://github.com/junegunn/vim-plug) of vim plug 
+These commads are taken from the [official repo](https://github.com/junegunn/vim-plug) of vim plug
 
 
 
@@ -427,7 +428,7 @@ When done with all the errors you might want to run this command to download som
 
 If you want to enable desktop support in Flutter use this command
 
->``` 
+>```
 >flutter config --enable-linux-desktop
 >```
 
@@ -443,7 +444,7 @@ You can install them with this command
 
 <br>
 
-# Special Thanks 
+# Special Thanks
 
 * Derek Taylor
 * Brian Buccola
