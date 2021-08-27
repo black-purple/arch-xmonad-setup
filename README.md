@@ -444,7 +444,7 @@ You can install them with this command
 
 <br>
 
-# Some blender Addons
+# Some Blender Addons
 
 ![image](https://user-images.githubusercontent.com/82895430/131049482-896c476b-2b76-46fe-88bb-f2e402d77bfc.png)
 
