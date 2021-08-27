@@ -164,7 +164,7 @@ Clone this repo to your home direcotory using this command (IMPORTANT because al
 To install the packages in the official repos use the following command:
 
 >```
->sudo pacman -Syyu --needed jq openshot copyq kitty arch-wiki-docs arch-wiki-lite pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m ueberzug neovim fish firefox chromium qutebrowser doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord libreoffice blender inkscape gimp krita atom godot evince rust
+>sudo pacman -Syyu --needed dunst jq openshot copyq kitty arch-wiki-docs arch-wiki-lite pavucontrol pulseaudio lxappearance blueman tmux xsel xclip python-pip python2-pip ttf-ubuntu-font-family scrot curl wget base-devel cmake ninja pkgconf clang alacritty ranger w3m ueberzug neovim fish firefox chromium qutebrowser doas vlc mpv texlive-most texlive-lang biber xdg-user-dirs git xdotool lsd bat figlet lolcat neofetch cowsay tldr telegram-desktop discord libreoffice blender inkscape gimp krita atom godot evince rust
 >```
 
 
@@ -178,7 +178,7 @@ If you don't have an aur helper I suggest you use one.
 I personally use yay so this is the command I'm using.
 
 >```
->yay eclipse-java-bin lightcord i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
+>yay eclipse-java-bin i3lock-fancy-git gotop jp2a wps-office shell-color-scripts visual-studio-code-bin tty-clock visual-studio-code-insiders-bin pipes-rs github-desktop otf-fontawesome-5-free ttf-open-sauce-sans ttf-mononoki adobe-source-code-pro-fonts ttf-arabeyes-fonts ttf-amiri nerd-fonts-mononoki devour shell-color-scripts zsh-syntax-highlighting zsh-autosuggestions-git
 >```
 
 If you want to install yay use this chain of commands:
