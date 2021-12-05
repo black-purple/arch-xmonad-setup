@@ -184,7 +184,7 @@ I personally use yay so this is the command I'm using.
 If you want to install yay use this chain of commands:
 
 >```
->cd /tmp; git clone https://aur.archlinux.org/yay-git.git; cd paru; makepkg -si
+>cd /tmp; git clone https://aur.archlinux.org/yay-git.git; cd yay-git; makepkg -si
 >```
 <br>
 
