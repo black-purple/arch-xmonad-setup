@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # calling scripts
-alias dt=~/BashScripts/mygreetings.sh
-alias ks=~/BashScripts/lay_sw.sh
-alias kp=~/BashScripts/kp.sh
+alias dt=~/arch-xmonad-setup/scripts/mygreetings.sh
+alias ks=~/arch-xmonad-setup/scripts/lay_sw.sh
+alias kp=~/arch-xmonad-setup/scripts/kp.sh
 
 # mpv commads
 alias dv='devour mpv'
