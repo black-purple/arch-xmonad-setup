@@ -37,114 +37,177 @@ Preview image
 
 ## Setup my environment
 
-Install all my needed and favourites apps
+Install all my needed and favourite apps
+<details>
+    <summary>Terminals</summary>
 
-* Terminal:
-    * alacritty
-    * kitty
-* File explorer: ranger
-    * Dependencies: w3m, uberzug
-* Text editor: neovim
-* IDE: visual-studio-code
-* Shell: fish
-* Browser:
-    * firefox
-    * qutebrowser
-* Video Editor:
-    * kdenlive
-    * openshot
+    1.alacritty
+    2.kitty
+</details>
+<details>
+    <summary>File explorer</summary>
+
+    1.ranger
+        Deps: w3m, uberzug
+    2.pcmanfm
+</details>
+<details>
+    <summary>Text editor</summary>
+
+    1.neovim
+    2.vim
+    3.gedit
+</details>
+<details>
+    <summary>IDE</summary>
+
+    1.visual-studio-code
+    2.visual-studio-code-insiders
+</details>
+<details>
+    <summary>Shells</summary>
+
+    1.bash
+    2.fish
+    3.zsh
+</details>
+<details>
+    <summary>Browsers</summary>
+
+    1.firefox
+    2.brave
+    3.surf
+    4.qutebrowser
+</details>
+<details>
+    <summary>Video Editors</summary>
+
+    1.kdenlive
+    2.openshot
+    3.davinci resolve
+</details>
+
 * Screenshot utility: scrot
 * ScreenLock utility: i3lock-fancy
 (or just ```i3lock``` with an image, it loads faster that way and you make it look the same as ```i3lock-fancy``` just check the [official repo](https://github.com/meskarune/i3lock-fancy) for more details on that)
 * Music player: mocp (terminal based)
 * AudioVisualizer: cli-visualizer (terminal based)
-* System ressources monitor:
-    * htop
-    * gotop
-* Fonts:
-    * ttf-ubuntu-font-family
-    * otf-fontawesome-5-free
-    * ttf-open-sauce-sans
-    * ttf-mononoki
-    * adobe-source-code-pro-fonts
-    * nerd-fonts-mononoki
-    * ttf-arabeyes-fonts
-    * ttf-amiri
-* Video player
-    * mpv
-    * vlc
+
+<details>
+    <summary>System ressources monitor</summary>
+
+    1.htop
+    2.gotop
+</details>
+<details>
+    <summary>Fonts</summary>
+
+    1.ttf-ubuntu-font-family
+    2.otf-fontawesome-5-free
+    3.ttf-open-sauce-sans
+    4.ttf-mononoki
+    5.adobe-source-code-pro-fonts
+    6.nerd-fonts-mononoki
+    7.ttf-arabeyes-fonts
+    8.ttf-amiri
+</details>
+<details>
+    <summary>Video player</summary>
+
+    1.mpv
+    2.vlc
+</details>
+
 * PDF reader: evince
 * ClipBoard Manager: copyq
-* Office Suite:
-    * WPS Office
-    * LibreOffice
-* Tools:
-    * tmux
-    * arch-wiki-docs
-    * x-on-resize
-    * blueman
-    * xdg-user-dirs
-    * xdotool
-    * git
-    * paru
-    * yay
-    * python-pip
-    * python2-pip
-    * xclip
-    * xsel
-    * devour
-    * shell-color-scripts
-    * conky
-    * doas
-    * lsd
-    * bat
-    * jp2a
-    * figlet
-    * lolcat
-    * neofetch
-    * cowsay
-    * tldr
-    * tty-clock
-    * pipes-rs
-    * cmake
-    * ninja
-    * clang
-    * pkgconf
-    * base-devel
-    * jq
-    * zsh-syntax-highlighting
-    * zsh-autosuggestions-git
-* LaTeX
-    * texlive-most
-    * texlive-lang
-    * biber
-* Xmonad utils
-    * trayer
-    * volumeicon
-    * pavucontrol
-    * pulseaudio
-    * lxappearance
-    * nitrogen
-    * compton
-    * dmenu
-    * rofi
-* Apps
-    * telegram-desktop
-    * discord
-    * lightcord
-    * blender
-    * inkscape
-    * gimp
-    * krita
-    * github-desktop
-    * code
-    * code-insiders
-    * eclipse
-    * atom
-    * godot
-* Programming Languages
-    * dart/flutter
-    * rust
+<details>
+    <summary>Office suite</summary>
+
+    1.WPS Office
+    2.LibreOffice
+</details>
+<details>
+    <summary>Tools</summary>
+
+    1.tmux
+    2.arch-wiki-docs
+    3.x-on-resize
+    4.blueman
+    5.xdg-user-dirs
+    6.xdotool
+    7.git
+    8.paru
+    9.yay
+    10.python-pip
+    11.python2-pip
+    12.xclip
+    13.xsel
+    14.devour
+    15.shell-color-scripts
+    16.conky
+    17.doas
+    18.lsd
+    19.bat
+    20.jp2a
+    21.figlet
+    22.lolcat
+    23.neofetch
+    24.cowsay
+    25.tldr
+    26.tty-clock
+    27.pipes-rs
+    28.cmake
+    29.ninja
+    30.clang
+    31.pkgconf
+    32.base-devel
+    33.jq
+    34.zsh-syntax-highlighting
+    35.zsh-autosuggestions-git
+</details>
+<details>
+    <summary>LaTeX</summary>
+
+    1.texlive-most
+    2.texlive-lang
+    3.biber
+</details>
+<details>
+    <summary>Xmonad</summary>
+
+    1.trayer
+    2.volumeicon
+    3.pavucontrol
+    4.pulseaudio
+    5.lxappearance
+    6.nitrogen
+    7.compton
+    8.dmenu
+    9.rofi
+</details>
+<details>
+    <summary>Apps</summary>
+
+    1.telegram-desktop
+    2.discord
+    3.lightcord
+    4.blender
+    5.inkscape
+    6.gimp
+    7.krita
+    8.github-desktop
+    9.code
+    10.code-insiders
+    11.eclipse
+    12.atom
+    13.godot
+</details>
+<details>
+    <summary>Programming Languages</summary>
+
+    1.dart/flutter
+    2.rust
+</details>
 
 <br>
 To install the above packages follow the steps below
