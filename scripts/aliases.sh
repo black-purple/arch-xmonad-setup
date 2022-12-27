@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # calling scripts
-alias dt=~/BashScripts/mygreetings.sh
-alias ks=~/BashScripts/lay_sw.sh
-alias kp=~/BashScripts/kp.sh
+alias dt=~/arch-xmonad-setup/scripts/mygreetings.sh
+alias ks=~/arch-xmonad-setup/scripts/lay_sw.sh
+alias kp=~/arch-xmonad-setup/scripts/kp.sh
 
 # mpv commads
 alias dv='devour mpv'
@@ -13,7 +13,7 @@ alias mocp='mocp -T darkdot_theme'
 
 # config commands
 alias xc='nvim ~/.xmonad/xmonad.hs'
-alias ac='nvim ~/.config/alacritty/alacritty.yml'
+alias kc='nvim ~/.config/kitty/kitty.conf'
 alias brc='nvim ~/.bashrc'
 alias zrc='nvim ~/.zshrc'
 alias frc='nvim ~/.config/fish/config.fish'
@@ -40,6 +40,8 @@ alias e=exit
 alias r=ranger
 alias d=devour
 alias v=vim
+alias lampp='/opt/lampp/lampp'
+alias flutter='~/flutter/bin/flutter'
 
 
 # ls shortcuts
