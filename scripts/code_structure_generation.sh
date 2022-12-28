@@ -75,7 +75,7 @@ nafs() {
         public/index.js
         echo `head -n -1 package.json` > package.json
         echo ',"type": "module"}' >> package.json
-        echo htmlTemplate > views/index.html
+        echo "$htmlTemplate" > views/index.html
         echo "$serverFile" > index.js
     else
         cd "$1"
@@ -86,7 +86,12 @@ nafs() {
         public/index.js
         echo `head -n -1 package.json` > package.json
         echo ',"type": "module"}' >> package.json
-        echo htmlTemplate > views/index.html
+        echo "$htmlTemplate" > views/index.html
         echo "$serverFile" > index.js
     fi
+}
+
+nnafs() {
+    nna
+    nafs
 }
