@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# calling functions
+source ~/arch-xmonad-setup/scripts/code_structure_generation.sh
+
 # calling scripts
 alias dt=~/arch-xmonad-setup/scripts/mygreetings.sh
 alias ks=~/arch-xmonad-setup/scripts/lay_sw.sh
