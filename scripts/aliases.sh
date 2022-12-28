@@ -44,7 +44,6 @@ alias r=ranger
 alias d=devour
 alias v=vim
 alias lampp='/opt/lampp/lampp'
-alias flutter='~/flutter/bin/flutter'
 
 
 # ls shortcuts

@@ -53,8 +53,7 @@ app.listen(port, () => {
 });
 '
 
-nna() {
-    cd ~/code
+nodeapi() {
     if [ -z "$1" ]; then
     mkdir "expressapi" && cd "$_"
     npm i express mysql2 sequelize dotenv
@@ -66,7 +65,7 @@ nna() {
     fi
 }
 
-nafs() {
+nodeapifs() {
     if [ -z "$1" ]; then
         mkdir -p models views controllers db routes public/img
         touch routes/routes.env.js\
@@ -91,7 +90,15 @@ nafs() {
     fi
 }
 
-nnafs() {
-    nna
-    nafs
+nodeapiwfs() {
+    nodeapi
+    nodeapifs
+}
+
+nfa() {
+    if [ -z "$1" ]; then
+        flutter create new_flutter_proj
+    else
+        flutter create "$1"
+    fi
 }
