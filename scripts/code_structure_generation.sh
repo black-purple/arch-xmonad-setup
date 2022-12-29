@@ -71,7 +71,9 @@ nodeapifs() {
         touch routes/routes.env.js\
         controllers/controllers.env.js\
         public/index.css\
-        public/index.js
+        public/index.js\
+        .gitignore
+        echo "node_modules/" > .gitignore
         echo `head -n -1 package.json` > package.json
         echo ',"type": "module"}' >> package.json
         echo "$htmlTemplate" > views/index.html
@@ -82,7 +84,9 @@ nodeapifs() {
         touch routes/routes.env.js\
         controllers/controllers.env.js\
         public/index.css\
-        public/index.js
+        public/index.js\
+        .gitignore
+        echo "node_modules/" > .gitignore
         echo `head -n -1 package.json` > package.json
         echo ',"type": "module"}' >> package.json
         echo "$htmlTemplate" > views/index.html
