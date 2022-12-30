@@ -43,8 +43,6 @@ alias e=exit
 alias r=ranger
 alias d=devour
 alias v=vim
-alias lampp='/opt/lampp/lampp'
-
 
 # ls shortcuts
 alias la='lsd -lhatr'
